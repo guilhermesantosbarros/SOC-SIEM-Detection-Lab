@@ -24,6 +24,12 @@ Desenvolver um portfólio para SOC/Blue Team júnior. Simular uma pequena empres
 - Preserve TLS, assinaturas e verificação de checksums. Um hash calculado localmente não valida uma ISO sem comparação confiável.
 - Não desative contas, desligue servidores ou aplique contenção automaticamente como ação de N1. Vincule contenção a autorização e procedimento.
 
+## Preferência de Git
+
+- O usuário pediu que o progresso seja salvo com commit e push diretamente na `main`.
+- Ao concluir um conjunto de alterações verificado, salve na `main`. Não crie branches de trabalho ou pull requests, salvo pedido posterior do usuário.
+- Confira o estado do checkout e do remoto antes de enviar. Preserve alterações e commits existentes; não use force push para sobrescrever o histórico.
+
 ## Escopo da V1
 
 Linux primeiro; Windows fica para uma expansão. Investigar quatro casos controlados: falhas repetidas de SSH, falhas seguidas de sucesso, criação de usuário e alteração de privilégios. Verificar regras existentes antes de justificar regras personalizadas. Incluir atividade legítima para discutir falso positivo.
